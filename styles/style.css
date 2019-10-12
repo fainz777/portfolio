@@ -1,0 +1,26 @@
+summary {
+	display: block;
+	cursor: pointer;
+	outline: none;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+details[open] > summary::before {
+	/*content: '\25BC';*/
+}
+
+.projects_carosel {
+
+}
+
+.projects_carosel .projects_carosel__item {
+	width: 100%;
+	height: auto;
+}
+
+.projects_carosel__img {
+	display: block;
+}

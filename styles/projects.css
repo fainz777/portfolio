@@ -1,0 +1,46 @@
+
+body {
+	overflow: hidden;
+	background: #999;
+}
+
+.previewer_wrapper {
+	width: 100%;
+	background: #999;
+	margin: 0 auto;
+	transition: .5s;
+}
+
+.previewer_wrapper.mobile {
+	width: 375px;
+}
+
+.previewer_wrapper.tablet {
+	width: 640px;
+}
+
+.previewer {
+	width: 100%;
+	height: 100vh;
+}
+
+.preview_switch_wrapper {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 120px;
+}
+
+.preview_switch {
+	display: block;
+}
+
+.preview_switch + .preview_switch {
+	margin-top: 15px;
+}
+
+.back_button {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+}

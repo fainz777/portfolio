@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>TheYallow</title>
+	<link rel="icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<div class="page_wrapper">
+	<header class="page_header">
+		<div class="top_bar">
+			<div class="inner_wrapper top_bar__inner">
+				<h1 class="top_bar__title">
+					<a class="top_bar__title_link" href="/">
+						<img class="top_bar__logo" src="./assets/images/logo.svg" alt="TheYalow logo">
+						<span>TheYalow</span>
+					</a>
+				</h1>
+				<nav class="top_bar__nav">
+					<ul class="top_bar__nav_list reset_list">
+						<li class="top_bar__nav_item">
+							<a class="top_bar__nav_item_link top_bar__nav_item_link__about" href="#">
+								<img class="top_bar__nav_item_icon" src="./assets/images/icons/user.svg" alt="">
+								<span class="top_bar__nav_item_text">About Us</span>
+							</a>
+						</li>
+						<li class="top_bar__nav_item">
+							<a class="top_bar__nav_item_link top_bar__nav_item_link__services" href="#">
+								<img class="top_bar__nav_item_icon" src="./assets/images/icons/wrench.svg" alt="">
+								<span class="top_bar__nav_item_text">Services</span>
+							</a>
+						</li>
+						<li class="top_bar__nav_item">
+							<a class="top_bar__nav_item_link top_bar__nav_item_link__contact" href="#">
+								<img class="top_bar__nav_item_icon" src="./assets/images/icons/mail.svg" alt="">
+								<span class="top_bar__nav_item_text">Contact</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="page_main">
+		<section class="page_section page_section__video_slider">
+			<div class="video_slider">
+				<div class="slider_btn slider_btn__prev"></div>
+				<div class="slider_btn slider_btn__next"></div>
+				<div class="video_slider_item">
+					<div class="video_slider_item__inner inner_wrapper">
+						<h2 class="video_slider_item__title">
+							<span class="video_slider_item__title_inner highlighter">The cool</span>
+							<span class="video_slider_item__title_inner">The minimal</span>
+						</h2>
+
+						<div class="video_slider_item__player_wrapper">
+							<video class="video_slider_item__player" src="https://media.w3.org/2010/05/sintel/trailer.mp4" poster="./assets/images/i/poster.jpg"></video>
+							<div class="video_slider_item__player_play_btn play_btn"></div>
+							<div class="video_slider_item__player_toolbar_wrapper">
+								<div class="video_slider_item__player_toolbar">
+									<div class="play"></div>
+									<div class="progress_bar">
+										<div class="progress_bar__state"></div>
+									</div>
+									<div class="speaker_wrapper">
+										<div class="speaker"></div>
+										<div class="sound_level_wrapper">
+											<input class="sound_level" type="range">
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page_section page_section__features">
+			<h2 class="sr_only">Features</h2>
+			<div class="inner_wrapper">
+				<ul class="features__list reset_list">
+					<li class="features__item">
+						<img class="features__item_icon features__item_icon_cloud" src="./assets/images/icons/cloud.svg" alt="" >
+						<span class="features__item_title">Better design</span>
+					</li>
+					<li class="features__item">
+						<img class="features__item_icon features__item_icon_list" src="./assets/images/icons/list.svg" alt="" >
+						<span class="features__item_title">Customize</span>
+					</li>
+					<li class="features__item">
+						<img class="features__item_icon features__item_icon_plane" src="./assets/images/icons/plane.svg" alt="" >
+						<span class="features__item_title">Its free</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="page_section page_section__feed">
+			<div class="page_section__feed_inner inner_wrapper">
+				<h2 class="page_section__feed_title">Lorem ipsum dolor sit amet</h2>
+
+				<div class="feed_list">
+					<div class="feed_item feed_item__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+						<a class="more" href="https://twitter.com/rollingscopes/status/1168898004360859648" target="_blank"></a>
+
+						<div class="feed_item__text__publish_date">
+							<span class="date_part day">25</span>
+							<span class="date_part month">April</span>
+						</div>
+					</div>
+
+					<div class="feed_item feed_item__video">
+						<video class="feed_item__video_player" src="https://media.w3.org/2010/05/sintel/trailer.mp4" poster="./assets/images/i/poster_small.jpg"></video>
+						<span class="feed_item__video_play_btn play_btn"></span>
+					</div>
+
+					<div class="feed_item feed_item__tweet">
+						<ul class="feed_item__tweet_list reset_list">
+							<li class="feed_item__tweet_item">Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+							<li class="feed_item__tweet_item">Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+							<li class="feed_item__tweet_item">Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+						</ul>
+
+						<form class="feed_item__tweet_form">
+							<input class="feed_item__tweet_form_input" type="text">
+							<button class="feed_item__tweet_form_send_btn" type="submit">Tweet</button>
+						</form>
+						<a class="more" href="https://twitter.com/rollingscopes/" target="_blank"></a>
+						<div class="counter">22</div>
+					</div>
+				</div>
+
+				<div class="scrollbar">
+					<div class="scrollbar_toggler"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page_section page_section__promo">
+			<div class="inner_wrapper">
+				<h2 class="page_section__promo_title">Lorem ipsum dolor sit amet</h2>
+				<div class="page_section__promo_inner">
+					<div class="page_section__promo_banner_wrapper">
+						<span class="page_section__promo_banner_label">Its 100% Free</span>
+						<img src="./assets/images/i/devices.png" alt="">
+					</div>
+					<div class="page_section__promo_list_wrapper">
+						<ul class="page_section__promo_list reset_list">
+							<li class="page_section__promo_list_item">Sed ut perspiciatis unde omnis</li>
+							<li class="page_section__promo_list_item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+							<li class="page_section__promo_list_item">Sed ut perspiciatis unde omnis</li>
+							<li class="page_section__promo_list_item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+</main>
+	<footer class="page_footer">
+		<div class="page_footer__inner inner_wrapper">
+			<span class="footer__logo_wrapper">
+				<img class="footer__logo" src="./assets/images/logo.svg" alt="TheYalow logo">
+				<span class="footer__logo_text">TheYalow</span>
+			</span>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Segoe WP';
+    src: url('SegoeWP.woff2') format('woff2'),
+        url('SegoeWP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe WP';
+    src: url('SegoeWP-Light.woff2') format('woff2'),
+        url('SegoeWP-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
