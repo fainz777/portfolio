@@ -5,36 +5,46 @@
 	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="./styles/materialize/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="./styles/materialize/materialize.min.css" media="screen,projection"/>
+	<link rel="stylesheet" href="./assets/fonts/fontello/css/fontello.css">
 	<link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-	<article class="container">
-		<section class="row">
+<article>
+	<div class="container">
+		<section class="row intro_section">
 			<div class="col s4">
-
+				<img class="avatar" src="https://avatars2.githubusercontent.com/u/2943284?s=460" alt="">
 			</div>
-			<div class="col s12">
+			<div class="col s8">
 				<h1>
 					Oksana Fainitskaia
 				</h1>
-				<ul>
-					<p>
-						<a href="https://github.com/fainz777/">github</a>
-					</p>
-					<p>
-						<a href="/">fa</a>
-						<a href="/">Lin</a>
-						<a href="/">mail</a>
-					</p>
-				</ul>
+				<p class="github">
+					<a href="https://github.com/fainz777/" target="_blank">My github account</a>
+				</p>
+				<p class="contacts">
+					<a href="https://www.facebook.com/profile.php?id=100002861842452" target="_blank">
+						<i class="icon-facebook"></i>
+					</a>
+					<a href="https://ru.linkedin.com/pub/oksana-fainitskaya/58/360/136" target="_blank">
+						<i class="icon-linkedin-squared"></i>
+					</a>
+					<a href="mailto:fainz777@gmail.com">
+						<i class="icon-mail"></i>
+					</a>
+					<a href="skype:ixchel777?call">
+						<i class="icon-skype"></i>
+					</a>
+				</p>
 			</div>
 		</section>
-		<section class="row">
-			<div class="col s12 accordin_item">
-				<details>
-					<summary>
-						<h2 class="accordin_toggler">
+
+		<section class="row education">
+			<div class="col s12">
+				<details class="education_accordin">
+					<summary class="education_accordin__toggler">
+						<h2>
 							Education
 							<i class="material-icons">keyboard_arrow_down</i>
 						</h2>
@@ -52,59 +62,73 @@
 				</details>
 
 
-
 			</div>
 		</section>
-		<sectiion class="row">
-			<div class="col s12">
-				<h2>Projects</h2>
-				<div class="wrapper">
-					<a id="projects_carosel__left" class="btn-floating btn-large waves-effect waves-light red">
-						<i class="material-icons">chevron_left</i>
-					</a>
-					<a id="projects_carosel__right" class="btn-floating btn-large waves-effect waves-light red">
-						<i class="material-icons">chevron_right</i>
-					</a>
+	</div>
+
+
+	<section class="carousel_section">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h2>Projects</h2>
 				</div>
-				<div id="projects_carosel" class="projects_carosel carousel">
-					<div class="projects_carosel__item carousel-item">
+			</div>
+		</div>
+
+		<div class="projects_carosel_wrapper">
+			<a id="projects_carosel__left"
+			   class="arrow_btn arrow_btn--prev btn-floating btn-medium waves-effect waves-light red">
+				<i class="material-icons">chevron_left</i>
+			</a>
+			<a id="projects_carosel__right"
+			   class="arrow_btn arrow_btn--next btn-floating btn-medium waves-effect waves-light red">
+				<i class="material-icons">chevron_right</i>
+			</a>
+
+			<div id="projects_carosel" class="projects_carosel carousel">
+				<div class="projects_carosel__item carousel-item">
+					<!--<div class="projects_carosel__item_inner">-->
 						<img class="projects_carosel__img" src="https://lorempixel.com/800/400/food/1">
 
-						<div>
+						<div class="projects_carosel__item_info">
 							<h3>TheYalow</h3>
 							<ul>
 								<li>Css/Html</li>
 								<li>Adaptive</li>
 								<li>Responsive</li>
 							</ul>
-							<a href="./projects/index.html?project=theyalow" class="learn_more waves-effect waves-light btn">
-								<i class="material-icons left">cloud</i>
+							<a href="./projects/index.html?project=theyalow"
+							   class="learn_more waves-effect waves-light btn">
+								<i class="material-icons left">visibility</i>
 								Live View
 							</a>
 						</div>
-
-					</div>
-					<div class="projects_carosel__item carousel-item">
+					<!--</div>-->
+				</div>
+				<div class="projects_carosel__item carousel-item">
+					<!--<div class="projects_carosel__item_inner">-->
 						<img class="projects_carosel__img" src="https://lorempixel.com/800/400/food/2">
-
-						<div>
+						<div class="projects_carosel__item_info">
 							<h3>Repair Design Project</h3>
 							<ul>
 								<li>Css/Html</li>
 								<li>Adaptive</li>
 								<li>Responsive</li>
 							</ul>
-							<a href="./projects/index.html?project=repair-design-project" class="learn_more waves-effect waves-light btn">
-								<i class="material-icons left">cloud</i>
+							<a href="./projects/index.html?project=repair-design-project"
+							   class="learn_more waves-effect waves-light btn">
+								<i class="material-icons left">visibility</i>
 								Live View
 							</a>
 						</div>
-					</div>
+					<!--</div>-->
 				</div>
 			</div>
-		</sectiion>
-	</article>
-	<script src="./js/materialize/materialize.min.js"></script>
-	<script src="js/main.js"></script>
+		</div>
+	</section>
+</article>
+<script src="./js/materialize/materialize.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

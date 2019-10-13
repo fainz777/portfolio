@@ -1,26 +1,143 @@
-summary {
+html {
+	font-size: 7px;
+}
+
+body {
+	padding: 5% 0;
+	font-size: 3rem;
+}
+
+a {
+	transition: .3s;
+}
+
+a:hover {
+	color: #e57373;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.btn-floating i {
+	font-size: 3.5rem;
+}
+
+.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i {
+	font-size: 2.5rem;
+}
+/**************************************
+	Intro Section
+ */
+.intro_section {
+	border-bottom: 5px dotted #ccc;
+	padding-bottom: 5%;
+}
+
+.intro_section h1 {
+	margin-top: 5%;
+}
+
+.avatar {
+	border-radius: 50%;
+	max-width: 100%;
+}
+
+.github {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+.contacts {
+	margin: 0;
+	font-size: 3.5rem;
+}
+
+/**************************************
+	Education Section
+ */
+.education_accordin__toggler {
 	display: block;
 	cursor: pointer;
 	outline: none;
 }
 
-summary::-webkit-details-marker {
+.education_accordin__toggler::-webkit-details-marker {
 	display: none;
 }
 
-details[open] > summary::before {
-	/*content: '\25BC';*/
+.education_accordin__toggler .material-icons {
+	vertical-align: middle;
+	transition: .3s;
+}
+
+.education_accordin[open] .education_accordin__toggler {
+	color: #e57373;
+}
+
+.education_accordin[open] .material-icons {
+	transform: rotate(180deg);
+}
+
+.education_accordin dt {
+	font-weight: bold;
+}
+
+/**************************************
+	Carousel Section
+ */
+
+.projects_carosel_wrapper {
+	position: relative;
+}
+
+.projects_carosel_wrapper .arrow_btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.projects_carosel_wrapper .arrow_btn--prev {
+	left: 5%;
+}
+
+.projects_carosel_wrapper .arrow_btn--next {
+	right: 5%;
 }
 
 .projects_carosel {
-
+	/*height: auto;*/
 }
 
 .projects_carosel .projects_carosel__item {
 	width: 100%;
 	height: auto;
+	/*position: absolute;*/
+}
+
+.projects_carosel__item_inner {
+	position: relative;
 }
 
 .projects_carosel__img {
 	display: block;
+}
+
+.projects_carosel__item_info {
+	font-size: 2rem;
+	position: absolute;
+/* top: 0; */
+	background: rgba(255,255,255,0.6);
+	padding: 20px;
+	left: 70px;
+	right: 70px;
+	bottom: 0;
+}
+
+.projects_carosel__item_info h3 {
+	margin-top: 0;
 }
