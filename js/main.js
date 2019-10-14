@@ -9,11 +9,11 @@ function initProjectCarousel() {
 
 	leftBtn.addEventListener('click', function () {
 		carousel.prev();
-	})
+	});
 
 	rightBtn.addEventListener('click', function () {
 		carousel.next();
-	})
+	});
 }
 
 function initApp() {

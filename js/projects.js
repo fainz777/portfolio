@@ -1,3 +1,5 @@
+
+
 function setPreviewClass(className) {
 	const previewWrapper = document.querySelector('#previewer_wrapper');
 

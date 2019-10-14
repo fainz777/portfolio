@@ -9,14 +9,17 @@ body {
 	background: #999;
 	margin: 0 auto;
 	transition: .5s;
+	/*min-width: 980px;*/
 }
 
 .previewer_wrapper.mobile {
 	width: 375px;
+	min-width: 0;
 }
 
 .previewer_wrapper.tablet {
 	width: 640px;
+	min-width: 0;
 }
 
 .previewer {
@@ -35,6 +38,18 @@ body {
 	display: block;
 }
 
+.desktop_preview {
+	display: none;
+}
+
+.previewer_wrapper.mobile .mobile_preview {
+	display: none;
+}
+
+.previewer_wrapper.tablet .tablet_preview {
+	display: none;
+}
+
 .preview_switch + .preview_switch {
 	margin-top: 15px;
 }
@@ -43,4 +58,29 @@ body {
 	position: absolute;
 	left: 20px;
 	bottom: 20px;
+}
+
+@media (max-width: 639px) {
+	.preview_switch {
+		display: none;
+	}
+}
+
+@media (max-width: 979px) {
+	.tablet_preview {
+		display: none;
+	}
+
+	.previewer_wrapper.mobile .tablet_preview {
+		display: block;
+	}
+
+
+}
+
+@media (min-width: 980px) {
+	.previewer_wrapper.mobile .desktop_preview ,
+	.previewer_wrapper.tablet .desktop_preview {
+		display: block;
+	}
 }
