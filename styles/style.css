@@ -125,6 +125,7 @@ h2 {
 
 .projects_carosel__img {
 	display: block;
+	width: 100%;
 }
 
 .projects_carosel__item_info {
