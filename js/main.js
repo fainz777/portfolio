@@ -1,19 +1,9 @@
 function initProjectCarousel() {
-	const elem = document.querySelector('#projects_carosel');
-	const leftBtn = document.querySelector('#projects_carosel__left');
-	const rightBtn = document.querySelector('#projects_carosel__right');
 	const options = {
-		fullWidth: true
+		type: 'carousel',
+		gap: 0
 	};
-	const carousel = M.Carousel.init(elem, options);
-
-	leftBtn.addEventListener('click', function () {
-		carousel.prev();
-	});
-
-	rightBtn.addEventListener('click', function () {
-		carousel.next();
-	});
+	new Glide('.glide', options).mount();
 }
 
 function initApp() {

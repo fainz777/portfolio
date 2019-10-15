@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="./styles/materialize/materialize.min.css" media="screen,projection"/>
 	<link rel="stylesheet" href="./assets/fonts/fontello/css/fontello.css">
+	<link rel="stylesheet" href="./js/vendor/glide/css/glide.core.min.css">
+	<link rel="stylesheet" href="./js/vendor/glide/css/glide.theme.min.css">
 	<link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -76,51 +78,57 @@
 			</div>
 		</div>
 
-		<div class="projects_carosel_wrapper">
-			<a id="projects_carosel__left"
-			   class="arrow_btn arrow_btn--prev btn-floating btn-medium waves-effect waves-light red">
-				<i class="material-icons">chevron_left</i>
-			</a>
-			<a id="projects_carosel__right"
-			   class="arrow_btn arrow_btn--next btn-floating btn-medium waves-effect waves-light red">
-				<i class="material-icons">chevron_right</i>
-			</a>
+		<div class="projects_carosel_wrapper glide">
+			<div data-glide-el="controls">
+				<a id="projects_carosel__left"
+				   class="arrow_btn arrow_btn--prev btn-floating btn-medium waves-effect waves-light red"
+				   data-glide-dir="<">
+					<i class="material-icons">chevron_left</i>
+				</a>
+				<a id="projects_carosel__right"
+				   class="arrow_btn arrow_btn--next btn-floating btn-medium waves-effect waves-light red"
+				   data-glide-dir=">">
+					<i class="material-icons">chevron_right</i>
+				</a>
+			</div>
 
-			<div id="projects_carosel" class="projects_carosel carousel">
-				<div class="projects_carosel__item carousel-item">
-					<div class="projects_carosel__item_inner">
-						<img class="projects_carosel__img" src="./assets/images/i/theyalow.jpg">
 
-						<div class="projects_carosel__item_info">
-							<h3>TheYalow</h3>
-							<ul>
-								<li>Css/Html</li>
-								<li>Adaptive</li>
-								<li>Responsive</li>
-							</ul>
-							<a href="./projects/index.html?project=theyalow"
-							   class="learn_more waves-effect waves-light btn">
-								<i class="material-icons left">visibility</i>
-								Live View
-							</a>
+			<div id="projects_carosel" class="projects_carosel glide__track" data-glide-el="track">
+				<div class="glide__slides">
+					<div class="projects_carosel__item glide__slide">
+						<div class="projects_carosel__item_inner">
+							<img class="projects_carosel__img" src="./assets/images/i/theyalow.jpg">
+							<div class="projects_carosel__item_info">
+								<h3>TheYalow</h3>
+								<ul>
+									<li>Css/Html</li>
+									<li>Adaptive</li>
+									<li>Responsive</li>
+								</ul>
+								<a href="./projects/index.html?project=theyalow"
+								   class="learn_more waves-effect waves-light btn">
+									<i class="material-icons left">visibility</i>
+									Live View
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="projects_carosel__item carousel-item">
-					<div class="projects_carosel__item_inner">
-						<img class="projects_carosel__img" src="./assets/images/i/repair.jpg">
-						<div class="projects_carosel__item_info">
-							<h3>Repair Design Project</h3>
-							<ul>
-								<li>Css/Html</li>
-								<li>Adaptive</li>
-								<li>Responsive</li>
-							</ul>
-							<a href="./projects/index.html?project=repair-design-project"
-							   class="learn_more waves-effect waves-light btn">
-								<i class="material-icons left">visibility</i>
-								Live View
-							</a>
+					<div class="projects_carosel__item glide__slide">
+						<div class="projects_carosel__item_inner">
+							<img class="projects_carosel__img" src="./assets/images/i/repair.jpg">
+							<div class="projects_carosel__item_info">
+								<h3>Repair Design Project</h3>
+								<ul>
+									<li>Css/Html</li>
+									<li>Adaptive</li>
+									<li>Responsive</li>
+								</ul>
+								<a href="./projects/index.html?project=repair-design-project"
+								   class="learn_more waves-effect waves-light btn">
+									<i class="material-icons left">visibility</i>
+									Live View
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -128,7 +136,7 @@
 		</div>
 	</section>
 </article>
-<script src="./js/materialize/materialize.min.js"></script>
+<script src="./js/vendor/glide/glide.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
