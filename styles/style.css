@@ -90,6 +90,9 @@ h2 {
 /**************************************
 	Carousel Section
  */
+.projects_carosel__item_info.expanded .more_checkbox__label::before {
+	content: '-';
+}
 
 .projects_carosel_wrapper {
 	position: relative;
@@ -131,14 +134,67 @@ h2 {
 .projects_carosel__item_info {
 	font-size: 2rem;
 	position: absolute;
-/* top: 0; */
-	background: rgba(255,255,255,0.6);
-	padding: 20px;
-	left: 70px;
-	right: 70px;
-	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, .6);
+	padding: 20px calc(5% + 55px);
+	left: 0;
+	right: 0;
+	color: #fff;
+	overflow: hidden;
+	z-index: 1;
+	height: 7rem;
+	transition: .3s;
+}
+
+.projects_carosel__item_info.expanded {
+	height: 100%;
+}
+
+.projects_carosel__item_info .read_more {
+	cursor: pointer;
+	font-size: inherit;
+	color: inherit;
+	font-weight: bold;
+	position: absolute;
+	right: 5%;
+	top: 2rem;
+	z-index: 100;
+}
+
+.projects_carosel__item_info .read_more::before {
+	content: '+';
 }
 
 .projects_carosel__item_info h3 {
 	margin-top: 0;
+	white-space: nowrap;
+}
+
+.projects_carosel__item_info li {
+	position: relative;
+	padding: 0 0 0 10px;
+}
+
+.projects_carosel__item_info li:before {
+	content: '-';
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 10px;
+	}
+
+	.intro_section h1 {
+		margin-top: 10%;
+	}
+
+	.projects_carosel__item_info {
+		top: 0;
+		left: 0;
+		right: 35%;
+		padding: 20px 20px 20px calc(5% + 60px);
+	}
 }
