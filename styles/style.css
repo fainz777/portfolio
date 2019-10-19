@@ -157,12 +157,24 @@ h2 {
 	font-weight: bold;
 	position: absolute;
 	right: 5%;
-	top: 2rem;
+	top: 1.4rem;
 	z-index: 100;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 22px;
 }
 
 .projects_carosel__item_info .read_more::before {
 	content: '+';
+	line-height: 1;
+}
+
+.projects_carosel__item_info.expanded .read_more::before {
+	content: '-';
 }
 
 .projects_carosel__item_info h3 {
@@ -180,6 +192,17 @@ h2 {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+@media (max-width: 767px) {
+	.container__slider {
+		width: auto;
+	}
+
+	.container__slider .row .col {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media (min-width: 768px) {

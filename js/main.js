@@ -1,4 +1,4 @@
-function foo() {
+function setMoreButton() {
 	const moreBtns = document.querySelectorAll('.read_more');
 
 	moreBtns.forEach(btn => {
@@ -21,7 +21,7 @@ function initProjectCarousel() {
 
 function initApp() {
 	initProjectCarousel();
-	foo();
+	setMoreButton();
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
