@@ -1,0 +1,21 @@
+.custom_input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $baseColor;
+  background: none;
+  font-family: $baseFont;
+  color: $baseColor;
+  transition: .3s;
+
+  &::placeholder {
+	color: $baseColor;
+  }
+
+  &:focus {
+	border-bottom-color: $primaryColor;
+	outline: none;
+  }
+}

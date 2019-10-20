@@ -1,0 +1,28 @@
+.page_section__design_styles {
+  background: linear-gradient(to bottom, $baseColor 50%, $primaryBgColor 50%);
+  position: relative;
+
+  @media (min-width: $mdMin) {
+	background: url(/assets/images/bg/design_styles_bg.jpg) center / cover;
+  }
+
+  &:before {
+	@media (min-width: $mdMin) {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+	}
+  }
+}
+
+.design_styles__list {
+  display: none;
+
+  @media (min-width: $lgMin) {
+	display: block;
+  }
+}

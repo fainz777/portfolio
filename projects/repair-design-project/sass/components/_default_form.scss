@@ -1,0 +1,21 @@
+.default_form {
+
+}
+
+.default_form__field_wrapper {
+  margin: 63px 0 0;
+
+  &:first-child {
+	margin-top: 0;
+  }
+}
+
+.default_form__field_label {
+  // ToDo: set variables
+  color: rgba(255, 255, 255, .5);
+  font-size: $mediumFontSize;
+}
+
+.default_form .button {
+  width: 100%;
+}

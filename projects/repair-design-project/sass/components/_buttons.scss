@@ -1,0 +1,45 @@
+.button {
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  padding: 19px;
+  color: $baseColor;
+  font-family: $secondaryFont;
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  @media (min-width: $lgMin) {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.button--rounded {
+  border-radius: 2px;
+}
+
+.outline_button {
+  @extend .button;
+  border: 1px solid $baseColor;
+  transition: .3s;
+
+  &:hover {
+	border-color: darken($primaryColor, 5%);
+	background: darken($primaryColor, 5%);
+  }
+}
+
+.solid_button {
+  @extend .button;
+  background: $primaryColor;
+
+  &:hover {
+    background: darken($primaryColor, 5%);
+  }
+}

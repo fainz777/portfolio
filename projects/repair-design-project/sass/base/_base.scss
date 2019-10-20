@@ -1,0 +1,59 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+div,
+form {
+  display: block;
+
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $baseFont;
+  font-size: 14px;
+  line-height: 1.5848;
+
+  @media (min-width: $lgMin) {
+    font-size: 20px;
+  }
+}
+
+a {
+  color: #af2d27;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+video[poster] {
+  object-fit: cover;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  width: auto;
+  margin: 0;
+}

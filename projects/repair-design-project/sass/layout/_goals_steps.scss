@@ -1,0 +1,7 @@
+.page_section__goals_steps {
+  display: none;
+
+  @media (min-width: $lgMin) {
+    display: block;
+  }
+}

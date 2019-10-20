@@ -1,0 +1,33 @@
+// Media
+$xsMin: 375px;
+$smMin: 540px;
+$mdMin: 720px;
+$lgMin: 980px;
+$xlMin: 1140px;
+
+$smMax: $smMin - 1;
+$lgMax: $mdMin - 1;
+
+// Fonts
+$baseFont: 'FuturaBookC', Helvetica, Arial, sans-serif;
+$secondaryFont: 'FuturaDemiC', Helvetica, Arial, sans-serif;
+$headingsFont: 'Yeseva One', 'Times New Roman', serif;
+
+// Font size
+$baseFontSize: 14px;
+$smallFontSize: 12px;
+$mediumFontSize: 15px;
+$largeFontSize: 18px;
+
+// Colors
+$baseColor: #fff;
+$primaryColor: #E3B873;
+
+$primaryBgColor: #252525;
+$secondaryBgColor: $baseColor;
+
+$darcColor: #181818;
+$darcColor2: #363636;
+$darcColor3: #131313;
+
+$grayColor: #959595;

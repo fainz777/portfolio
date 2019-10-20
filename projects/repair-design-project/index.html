@@ -4,7 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>IC "Repair Design Project"</title>
-	<link rel="stylesheet" href="./js/vendor/tiny-slider/tiny-slider.css">
+
+	<link rel="stylesheet" href="./assets/fonts/futurademic/stylesheet.css">
+	<link rel="stylesheet" href="./assets/fonts/futurabookc/stylesheet.css">
+	<link rel="stylesheet" href="./assets/fonts/yeseva/yeseva.css">
+
+	<link rel="stylesheet" href="./js/vendor/glide/css/glide.core.min.css">
+	<link rel="stylesheet" href="./js/vendor/glide/css/glide.theme.min.css">
 	<link rel="stylesheet" href="./dist/styles/style.css">
 </head>
 <body>
@@ -46,6 +52,11 @@
 		<main class="page_main">
 			<!-- Top Banner -->
 			<section class="page_section page_section--dark page_section__promo">
+				<div class="promo__instagram_link_wrapper">
+					<a class="promo__instagram_link" href="http://ya.ru">
+						<span class="inner">instagram</span>
+					</a>
+				</div>
 				<div class="promo__inner_wrapper inner_wrapper">
 					<h2 class="promo__title">
 						<span class="promo__title_inner">Turnkey Repair in the</span>
@@ -71,50 +82,118 @@
 
 			<!-- Completed projects -->
 			<section class="page_section page_section--dark page_section__completed_projects">
-				<div class="inner_wrapper">
-					<h2 class="page_section__title completed_projects__title page_section__title--highlighter">
-						<span class="title_inner">Completed</span>
-						<span class="title_inner">projects</span>
-					</h2>
-					<div class="page_section__intro">
-						<p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
-					</div>
 
+				<div class="mobile_only">
+					<div class="inner_wrapper">
+						<h2 class="page_section__title completed_projects__title page_section__title--highlighter">
+							<span class="title_inner">Completed</span>
+							<span class="title_inner">projects</span>
+						</h2>
+						<div class="page_section__intro">
+							<p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+						</div>
+
+						<div class="completed_projects__slider_mobile">
+							<div class="arrows_wrapper">
+								<span class="arrow arrow_left"></span>
+								<span class="arrow arrow_right"></span>
+							</div>
+
+							<figure class="slider_item">
+								<img class="slider_item__img" src="./assets/images/i/img1.jpg" alt="">
+								<figcaption class="slider_item__description_wrapper">
+									<dl class="slider_item__description">
+										<dt class="slider_item__description_param">City:</dt>
+										<dd class="slider_item__description_value">
+											Rostov-on-Don<br />
+											LCD admiral
+										</dd>
+									</dl>
+									<dl class="slider_item__description">
+										<dt class="slider_item__description_param">Apartment area:</dt>
+										<dd class="slider_item__description_value">81 m<sup>2</sup></dd>
+									</dl>
+									<dl class="slider_item__description">
+										<dt class="slider_item__description_param">Repair time:</dt>
+										<dd class="slider_item__description_value">3.5 months</dd>
+									</dl>
+									<dl class="slider_item__description">
+										<dt class="slider_item__description_param">Repair Cost:</dt>
+										<dd class="slider_item__description_value">Upon request</dd>
+									</dl>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
 				</div>
-				<div>
-					<figure>
-						<img src="./assets/images/i/_temp.jpg" alt="" width="340" height="241">
-					</figure>
-					<figcaption>
-						<dl>
-							<dt>City:</dt>
-							<dd>
-								Rostov-on-Don<br />
-								LCD admiral
-							</dd>
-						</dl>
-						<dl>
-							<dt>Apartment area:</dt>
-							<dd>81 m<sup>2</sup></dd>
-						</dl>
-						<dl>
-							<dt>Repair time:</dt>
-							<dd>3.5 months</dd>
-						</dl>
-						<dl>
-							<dt>Repair Cost:</dt>
-							<dd>Upon request</dd>
-						</dl>
-					</figcaption>
+
+				<div class="desktop_only">
+					<div class="completed_projects__desktop_inner inner_wrapper">
+						<div class="info_wrapper">
+							<h2 class="page_section__title completed_projects__title page_section__title--highlighter">
+								<span class="title_inner">Completed</span>
+								<span class="title_inner">projects</span>
+							</h2>
+							<div class="page_section__intro">
+								<p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+							</div>
+
+							<div class="descriptions">
+								<div class="itm">
+									<dl>
+										<dt>City:</dt>
+										<dd>
+											Rostov-on-Don<br />
+											LCD admiral
+										</dd>
+									</dl>
+									<dl>
+										<dt>Apartment area:</dt>
+										<dd>81 m<sup>2</sup></dd>
+									</dl>
+									<dl>
+										<dt>Repair time:</dt>
+										<dd>3.5 months</dd>
+									</dl>
+									<dl>
+										<dt>Repair Cost:</dt>
+										<dd>Upon request</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider_wrapper">
+							<ul class="tabs reset_list">
+								<li class="tabs_item active">Rostov-on-Don, Admiral</li>
+								<li class="tabs_item">Sochi Thieves</a></li>
+								<li class="tabs_item">Rostov-on-Don Patriotic</a></li>
+							</ul>
+							<div class="slider">
+								<div class="slider_item">
+									<img src="./assets/images/i/img1.jpg" alt="/" class="slider_item_img">
+								</div>
+								<div class="slider_item">
+									<img src="./assets/images/i/img2.jpg" alt="/" class="slider_item_img">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<!-- Online control -->
 			<section class="page_section page_section--dark page_section__online_control">
 				<div class="inner_wrapper">
-					<h2 class="page_section__title page_section__title--light">Online control</h2>
-					<div>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/k7VUlw8gHZs" style="max-width: 100%; height: auto;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<h2 class="page_section__title page_section__title--light has_icon">
+						Online control
+						<span class="page_section__title_icon_wrapper">
+							<img src="./assets/images/icons/cam.svg" alt="" class="page_section__title_icon">
+						</span>
+
+					</h2>
+					<div class="online_control__video_wrapper">
+						<iframe class="online_control__video" width="560" height="315" src="https://www.youtube.com/embed/zBCbbXlVOhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="online_control__description">
 						<p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
@@ -154,7 +233,12 @@
 			<!-- Types of Repair -->
 			<section class="page_section page_section__repairs">
 				<div class="inner_wrapper">
-					<h2 class="page_section__title">Types of Repair</h2>
+					<h2 class="page_section__title has_icon">
+						Types of Repair
+						<span class="page_section__title_icon_wrapper">
+							<img src="./assets/images/icons/tools.svg" alt="" class="page_section__title_icon">
+						</span>
+					</h2>
 					<div class="cards_list">
 						<article class="card_item">
 							<h3 class="sr_only">Redecorating</h3>
@@ -571,7 +655,7 @@
 		</footer>
 	</div>
 
-	<script src="./js/vendor/tiny-slider/tiny-slider.js"></script>
+	<script src="./js/vendor/glide/glide.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>

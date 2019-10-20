@@ -1,0 +1,49 @@
+.page_section__repairs {
+
+}
+
+.repairs__item {
+  margin: 79px 0 0;
+
+  &:first-child {
+	margin-top: 0;
+  }
+}
+
+.repairs__item_card {
+
+}
+
+.repairs__item_image {
+  width: 100%;
+}
+
+.repairs__item_description {
+  background: $baseColor;
+  padding: 21px 41px 37px 31px;
+  width: 80%;
+  margin-top: -100px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+
+  .price_tag {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(50%);
+  }
+}
+
+.repairs__item_title {
+  font-size: $mediumFontSize;
+  font-family: $headingsFont;
+}
+
+.repairs__item__includes_list {
+	color: $grayColor;
+  font-family: $secondaryFont;
+  color: $grayColor;
+  padding: 0;
+  list-style-position: inside;
+}

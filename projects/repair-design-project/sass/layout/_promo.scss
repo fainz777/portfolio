@@ -1,0 +1,129 @@
+.page_section__promo {
+  padding: 83px 0 61px;
+  background: url('/assets/images/bg/promo_bg.jpg') center / cover;
+  position: relative;
+
+  @media (min-width: $mdMin) {
+	padding: 140px 0;
+  }
+
+  &:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .7);
+	z-index: 1;
+  }
+}
+
+.promo__instagram_link_wrapper {
+  display: none;
+
+  @media (min-width: $mdMin) {
+	display: block;
+	position: absolute;
+	width: 82px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+  }
+}
+
+.promo__instagram_link {
+	color: $baseColor;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 19, 1);
+  transition: .3s;
+
+  &:hover {
+	background: rgba(19, 19, 19, .7);
+  }
+  
+  .inner {
+	display: block;
+	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	position: absolute;
+	top: 50%;
+	line-height: 1;
+	left: 50%;
+	color: $primaryColor;
+	white-space: nowrap;
+
+	&:after {
+	  content: '';
+	  display: inline-block;
+	  height: 1px;
+	  width: 51px;
+	  background: $primaryColor;
+	  vertical-align: middle;
+	  margin-left: 5px;
+	}
+  }
+}
+
+
+.promo__inner_wrapper {
+  position: relative;
+  z-index: 10;
+
+  @media (min-width: $mdMin) {
+	padding-left: calc(92px + 18px);
+  }
+}
+
+.promo__title {
+  font-family: $headingsFont;
+  font-size: 23px;
+  line-height: 1.3283;
+  margin-bottom: .6em;
+  font-weight: normal;
+
+  @media (min-width: $mdMin) {
+	font-size: 40px;
+  }
+
+  &_inner {
+	display: block;
+  }
+}
+
+.promo__content {
+  font-size: $largeFontSize;
+  line-height: 1.3584;
+  margin-bottom: 32px;
+  max-width: 300px;
+
+  @media (min-width: $mdMin) {
+	max-width: 450px;
+	font-size: 22px;
+  }
+}
+
+.promo__buttons {
+  .button {
+	display: block;
+
+	@media (min-width: $mdMin) {
+	  display: inline-block;
+	}
+
+	+ .button {
+	  margin-top: 26px;
+
+	  @media (min-width: $mdMin) {
+		margin-top: 0;
+		margin-left: 17px;
+	  }
+	}
+  }
+}

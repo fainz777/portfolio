@@ -1,0 +1,47 @@
+.sr_only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.reset_list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.highlighter {
+  color: $primaryColor;
+}
+
+
+
+@media (max-width: $smMax) {
+  .mobile_hidden {
+    display: none;
+  }
+
+  .mobile_only {
+    display: block;
+  }
+
+  .desktop_only {
+    display: none;
+  }
+}
+
+@media (min-width: $mdMin) {
+  .mobile_only {
+    display: none;
+  }
+
+  .desktop_only {
+    display: block;
+  }
+}

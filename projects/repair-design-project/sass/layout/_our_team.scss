@@ -1,0 +1,56 @@
+.our_team__item_list {
+	@media (min-width: $lgMin) {
+	  display: grid;
+	  grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.our_team__item {
+  margin: 130px 0 0;
+
+  @media (min-width: $lgMin) {
+	margin: 0;
+  }
+
+  &:first-child {
+	margin-top: 0;
+  }
+}
+
+.our_team__item_photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.our_team__item_detail {
+  max-width: 233px;
+  margin: -80px auto 0;
+  background: $baseColor;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  .personal_info {
+	padding: 22px 0;
+	font-size: $largeFontSize;
+	color: $darcColor;
+  }
+
+  .personal_info__name {
+	font-family: $headingsFont;
+  }
+
+  .personal_info__position {
+	font-family: $secondaryFont;
+	color: $grayColor;
+  }
+
+  .item_detail__exprience {
+	padding: 13px 0;
+	background: $primaryColor;
+	text-transform: uppercase;
+	font-family: $headingsFont;
+	font-size: 13px; // ToDo
+  }
+}
+
