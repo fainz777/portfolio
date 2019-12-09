@@ -1,3 +1,9 @@
 .page_section__benefits {
   display: none;
 }
+
+@media (min-width: $mdMin) {
+  .page_section__benefits {
+    display: block;
+  }
+}
