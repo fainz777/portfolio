@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/fainz777/portfolio#readme",
   "devDependencies": {
-    "webpack": "^1.13.1",
+    "webpack": "^5.74.0",
     "webpack-dev-server": "^1.14.1"
   }
 }
